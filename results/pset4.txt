@@ -1,0 +1,15 @@
+# CS50x pset4 verification runs
+
+## volume (scale 2.0)
+input peak=16383  output peak=32766  ratio=2.00
+header (44 bytes) preserved byte-for-byte: True
+sample (in->out): (5549->11098) (10443->20886) (14101->28202)
+
+## filter (testdata.bmp 60x40)
+grayscale: R==G==B for all pixels: True
+reflect: output == numpy fliplr(original): True
+blur: 3x3 box blur, output valid & changed: True
+edges: Sobel operator, output valid & changed: True
+
+## recover (card.raw, 8 blocks, 3 embedded JPEGs)
+recovered: 000.jpg 001.jpg 002.jpg — all open as valid 48x48 JPEG images
