@@ -43,3 +43,7 @@ pset9/finance/instance/
 Thumbs.db
 .vscode/
 .idea/
+
+# pset5 large data (download via pset5/speller/dictionaries/download.sh)
+pset5/speller/dictionaries/large
+pset5/speller/texts/lalaland.txt

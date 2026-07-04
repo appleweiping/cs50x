@@ -1,0 +1,3 @@
+A cat is a caterpillar.
+This CAT is not a Caterpillar!
+Cats and caterpillars and dogs.

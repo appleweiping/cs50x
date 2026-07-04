@@ -1,0 +1,3 @@
+The quick brown fox jumps over the lazy dog.
+This sentance has a mispelled word and anither one.
+CS50 is teh best course for learning programming in C.

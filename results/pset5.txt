@@ -1,0 +1,42 @@
+# CS50x pset5 verification runs
+
+## speller (hash table, djb2 hash, N=65537 buckets)
+### custom sample.txt (deliberate misspellings: sentance, mispelled, anither, teh)
+
+MISSPELLED WORDS
+
+sentance
+mispelled
+anither
+teh
+C
+
+WORDS MISSPELLED:     5
+WORDS IN DICTIONARY:  143091
+WORDS IN TEXT:        27
+TIME IN load:         0.09
+TIME IN check:        0.00
+TIME IN size:         0.00
+TIME IN unload:       0.02
+TIME IN TOTAL:        0.11
+
+
+### lalaland.txt vs large dictionary (143091 words) — expected 955 misspellings
+WORDS MISSPELLED:     955
+WORDS IN DICTIONARY:  143091
+WORDS IN TEXT:        17756
+TIME IN load:         0.07
+TIME IN check:        0.01
+TIME IN size:         0.00
+TIME IN unload:       0.02
+TIME IN TOTAL:        0.10
+
+
+## inheritance (3-generation blood-type tree, one sample run)
+Child (Generation 0): blood type AB
+    Parent (Generation 1): blood type BA
+        Grandparent (Generation 2): blood type BA
+        Grandparent (Generation 2): blood type AO
+    Parent (Generation 1): blood type BB
+        Grandparent (Generation 2): blood type BO
+        Grandparent (Generation 2): blood type BB
