@@ -1,0 +1,6 @@
+{% extends "layout.html" %}
+{% block title %} : Quoted{% endblock %}
+{% block main %}
+    <p class="lead">A share of {{ quote.name }} ({{ quote.symbol }}) costs {{ quote.price | usd }}.</p>
+    <a class="btn btn-primary" href="/buy">Buy {{ quote.symbol }}</a>
+{% endblock %}

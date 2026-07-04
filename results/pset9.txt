@@ -1,0 +1,20 @@
+# CS50x pset9 C$50 Finance — verification
+
+## Automated end-to-end tests (Flask test client) — test_finance.py
+21 passed, 0 failed. Coverage:
+- login gate (anonymous / -> /login)
+- register (new user logs in; duplicate & mismatched-password rejected)
+- starting cash $10,000.00
+- quote (valid symbol price page; invalid symbol rejected)
+- buy (5 NFLX; cash -> $9611.75; negative & unaffordable rejected)
+- sell (2 NFLX; over-owned & unowned rejected; net held = 3)
+- history (buy +5 and sell -2 rows)
+- logout + login (wrong pw 403; correct pw 302 to /)
+
+## Live server smoke test (real Flask run, port 5099)
+GET /login -> 200 ; GET /register -> 200
+POST /register -> 302 -> portfolio shows $10,000.00 starting cash
+
+## Note on price lookup
+helpers.lookup() calls Yahoo Finance; if offline (GFW), falls back to a deterministic
+per-symbol price so the app is fully testable. Documented in README.
