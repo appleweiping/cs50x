@@ -1,0 +1,27 @@
+# CS50x pset3 verification runs
+
+## plurality (Alice Bob Charlie; Alice,Bob,Charlie,Bob -> Bob wins? actually Alice1 Bob2 Charlie1 -> Bob)
+Number of voters: Vote: Vote: Vote: Vote: Bob
+-- tie case (Alice,Bob) --
+Number of voters: Vote: Vote: Alice
+Bob
+
+## runoff — CS50 spec example (Alice Bob Charlie, 5 voters) -> Charlie
+Number of voters: Rank 1: Rank 2: Rank 3: 
+Rank 1: Rank 2: Rank 3: 
+Rank 1: Rank 2: Rank 3: 
+Rank 1: Rank 2: Rank 3: 
+Rank 1: Rank 2: Rank 3: 
+Charlie
+
+## tideman — CS50 spec example (Alice Bob Charlie, 9 voters) -> Alice
+Number of voters: Rank 1: Rank 2: Rank 3: 
+Rank 1: Rank 2: Rank 3: 
+Rank 1: Rank 2: Rank 3: 
+Rank 1: Rank 2: Rank 3: 
+Rank 1: Rank 2: Rank 3: 
+Rank 1: Rank 2: Rank 3: 
+Rank 1: Rank 2: Rank 3: 
+Rank 1: Rank 2: Rank 3: 
+Rank 1: Rank 2: Rank 3: 
+Alice
