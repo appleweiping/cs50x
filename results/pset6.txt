@@ -1,0 +1,29 @@
+# CS50x pset6 (Python) verification runs
+
+## hello
+name='David' -> What's your name? hello, David
+
+## mario (height 4)
+Height:    #  #
+  ##  ##
+ ###  ###
+####  ####
+
+## cash
+0.41 -> Change owed: 4
+1.60 -> Change owed: 7
+
+## credit
+4003600000000014 -> Number: VISA
+378282246310005  -> Number: AMEX
+5555555555554444 -> Number: MASTERCARD
+4111111111111113 -> Number: INVALID
+
+## readability
+'Congratulations!...' -> Text: Grade 3
+'One fish...' -> Text: Before Grade 1
+
+## dna
+small.csv 1.txt (expect Bob)     -> Bob
+small.csv 2.txt (expect No match)-> No match
+small.csv 3.txt (expect Alice)   -> Alice
