@@ -1,0 +1,19 @@
+# CS50x pset1 verification runs
+
+## mario (height 4)
+Height:    #  #
+  ##  ##
+ ###  ###
+####  ####
+
+## cash
+0.41 -> Change owed: 4
+0.01 -> Change owed: 1
+1.60 -> Change owed: 7
+0.00 -> Change owed: 0
+
+## credit
+4003600000000014 -> Number: VISA
+378282246310005  -> Number: AMEX
+5555555555554444 -> Number: MASTERCARD
+4111111111111113 -> Number: INVALID

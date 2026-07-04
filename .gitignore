@@ -1,0 +1,45 @@
+# Compiled C binaries
+*.exe
+*.o
+*.out
+pset1/mario/mario
+pset1/cash/cash
+pset1/credit/credit
+pset2/scrabble/scrabble
+pset2/readability/readability
+pset2/caesar/caesar
+pset2/substitution/substitution
+pset3/plurality/plurality
+pset3/runoff/runoff
+pset3/tideman/tideman
+pset4/volume/volume
+pset4/filter/filter
+pset4/recover/recover
+pset5/speller/speller
+
+# CS50x-specific: don't ignore these committed source dirs' outputs beyond binaries above.
+
+# Recover/filter working artifacts (large binary media, regenerated at runtime)
+pset4/recover/*.jpg
+pset4/filter/out_*.bmp
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+*.egg-info/
+
+# Flask / finance
+pset9/finance/*.db
+pset9/finance/flask_session/
+pset9/finance/instance/
+
+# SQLite scratch
+*.db-journal
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
