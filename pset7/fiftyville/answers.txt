@@ -1,0 +1,19 @@
+Fiftyville — solution to the theft of the CS50 duck (July 28, 2023)
+
+Thief: Bruce
+City the thief escaped to: New York City
+Accomplice who helped the thief escape: Robin
+
+Reasoning (full query chain is in log.sql):
+1. The crime scene report placed the theft at 10:15am at the Humphrey Street bakery, with
+   three witnesses whose interviews mention the bakery.
+2. Ruth saw the thief drive out of the bakery parking lot within ten minutes of the theft;
+   Eugene saw the thief withdraw money at the Leggett Street ATM that morning; Raymond
+   heard the thief make a short (< 1 min) call planning the earliest flight out the next
+   day and asking the other person to buy the ticket.
+3. Intersecting the bakery-lot exit footage (10:15-10:25), the Leggett Street ATM
+   withdrawals, and the callers of short phone calls narrowed the suspects to Diana and
+   Bruce.
+4. The earliest flight out of Fiftyville on July 29 was flight 36 to New York City (08:20).
+   Of the two suspects, only Bruce was a passenger on that flight -> Bruce is the thief.
+5. The receiver of Bruce's short call that day was Robin -> Robin is the accomplice.

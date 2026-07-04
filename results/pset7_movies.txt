@@ -1,0 +1,63 @@
+# CS50x pset7 movies verification (433149 movies, 1.3M people)
+=== 1.sql (2008 movies count) ===
+rows: 10276
+=== 2.sql (Emma Stone birth) ===
+1988
+=== 3.sql (>=2018 count) ===
+rows: 110014
+=== 4.sql (rating 10.0 count) ===
+101
+=== 5.sql (Harry Potter) ===
+Harry Potter and the Sorcerer's Stone | 2001
+Harry Potter and the Chamber of Secrets | 2002
+Harry Potter and the Prisoner of Azkaban | 2004
+Harry Potter and the Goblet of Fire | 2005
+Harry Potter und ein Stein | 2006
+Harry Potter and the Order of the Phoenix | 2007
+Harry Potter and the Half-Blood Prince | 2009
+Harry Potter and the Deathly Hallows: Part 1 | 2010
+Harry Potter and the Deathly Hallows: Part 2 | 2011
+Harry Potter and the Untold Stories of Hogwarts | 2012
+Harry Potter: A History of Magic | 2017
+=== 6.sql (avg rating 2012) ===
+6.28703681056622
+=== 7.sql (2010 movies) rows ===
+rows: 7192
+   first 3:
+The Game | 9.8
+El último piso | 9.6
+María y los niños pobres | 9.4
+=== 8.sql (Toy Story stars) ===
+Tom Hanks
+Tim Allen
+Don Rickles
+Jim Varney
+=== 9.sql (2004 stars) rows ===
+rows: 19261
+   first 3:
+Amelia Barrett
+Sean Miller
+Jonny Spanish
+=== 10.sql (directors >=9.0) rows ===
+rows: 3848
+   first 3:
+Francis Ford Coppola
+Meng-Hua Ho
+Richard Gilbert Abramson
+=== 11.sql (Chadwick Boseman top 5) ===
+42
+Black Panther
+Marshall
+Ma Rainey's Black Bottom
+Get on Up
+=== 12.sql (Cooper & Lawrence) ===
+American Hustle
+Joy
+Serena
+Silver Linings Playbook
+=== 13.sql (Kevin Bacon costars) rows ===
+rows: 182
+   first 3:
+Steve Guttenberg
+Mickey Rourke
+Daniel Stern

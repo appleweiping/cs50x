@@ -47,3 +47,6 @@ Thumbs.db
 # pset5 large data (download via pset5/speller/dictionaries/download.sh)
 pset5/speller/dictionaries/large
 pset5/speller/texts/lalaland.txt
+
+# pset7 large DB (download via pset7/movies/download.sh); songs.db & fiftyville.db kept (small)
+pset7/movies/movies.db

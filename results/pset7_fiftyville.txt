@@ -1,0 +1,6 @@
+# CS50x pset7 fiftyville — full solution run
+
+## Final answers (from log.sql query chain)
+Thief: Bruce
+Escape city: New York City
+Accomplice: Robin
