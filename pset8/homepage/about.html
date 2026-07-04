@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>CS50 Duck Facts — About</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+              integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link href="styles/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+            <div class="container">
+                <a class="navbar-brand fw-bold" href="index.html">🦆 Duck Facts</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#nav" aria-controls="nav" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="nav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="facts.html">Facts</a></li>
+                        <li class="nav-item"><a class="nav-link" href="quiz.html">Quiz</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <main class="container my-5">
+            <h1 class="mb-4">About this site</h1>
+            <div class="row">
+                <div class="col-lg-8">
+                    <p>This four-page website was built for <strong>Harvard CS50x Problem Set 8
+                        (Homepage)</strong>. It satisfies the assignment's requirements:</p>
+                    <ul>
+                        <li>Four linked pages (Home, Facts, Quiz, About).</li>
+                        <li>The <a href="https://getbootstrap.com/">Bootstrap 5</a> front-end
+                            framework, loaded from a CDN.</li>
+                        <li>A custom stylesheet (<code>styles/style.css</code>) with its own
+                            rules layered on top of Bootstrap.</li>
+                        <li>Interactive JavaScript (<code>scripts/main.js</code>): a live footer
+                            clock and a client-side-graded quiz.</li>
+                    </ul>
+                    <p>It is an independent educational project — the CS50 duck and CS50 name
+                        belong to Harvard University's CS50 team.</p>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card">
+                        <div class="card-header bg-warning">Tech stack</div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">HTML5</li>
+                            <li class="list-group-item">CSS3 + Bootstrap 5.3</li>
+                            <li class="list-group-item">Vanilla JavaScript</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="text-center py-4 border-top">
+            <div class="container">
+                <p class="mb-1">Built for <strong>CS50x</strong> Problem Set 8 · Homepage.</p>
+                <p class="text-muted small mb-0">Local time: <span id="clock">—</span></p>
+            </div>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <script src="scripts/main.js"></script>
+    </body>
+</html>

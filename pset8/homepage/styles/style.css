@@ -1,0 +1,56 @@
+/* Custom stylesheet for the CS50x pset8 Homepage, layered on top of Bootstrap 5. */
+
+:root {
+    --duck-yellow: #ffd83d;
+    --duck-orange: #f6a623;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+/* Gradient hero banner. */
+.hero {
+    background: linear-gradient(135deg, var(--duck-yellow), var(--duck-orange));
+    color: #212529;
+}
+
+.hero .lead {
+    max-width: 40rem;
+    margin: 0 auto;
+}
+
+/* Cards lift slightly on hover for a bit of interactivity. */
+.card {
+    transition: transform 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.12) !important;
+}
+
+.navbar-brand {
+    letter-spacing: 0.02em;
+}
+
+footer {
+    background-color: #f8f9fa;
+}
+
+/* Quiz feedback highlighting applied by main.js. */
+.answer-correct {
+    color: #198754;
+    font-weight: 600;
+}
+
+.answer-wrong {
+    color: #dc3545;
+    font-weight: 600;
+}

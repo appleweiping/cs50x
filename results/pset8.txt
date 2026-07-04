@@ -1,0 +1,15 @@
+# CS50x pset8 Homepage verification
+
+## Pages served (HTTP 200 via python http.server)
+index.html, facts.html, quiz.html, about.html — all 200
+styles/style.css, scripts/main.js — 200
+
+## CS50 requirements met
+- 4 linked pages with shared Bootstrap 5 navbar (Home/Facts/Quiz/About)
+- Bootstrap 5.3 front-end framework (CDN)
+- Custom stylesheet styles/style.css (gradient hero, card hover, quiz feedback)
+- JavaScript scripts/main.js: live footer clock (setInterval) + client-side quiz grading
+
+## Quiz grading logic (verified with Node)
+all correct -> 2/2 ; one wrong -> 1/2 ; all wrong -> 0/2
+data-answer values (debugging, c) match correct radio option values

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>CS50 Duck Facts — Home</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+              integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link href="styles/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <!-- Shared navigation bar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-warning-subtle bg-dark sticky-top">
+            <div class="container">
+                <a class="navbar-brand fw-bold" href="index.html">🦆 Duck Facts</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#nav" aria-controls="nav" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="nav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="facts.html">Facts</a></li>
+                        <li class="nav-item"><a class="nav-link" href="quiz.html">Quiz</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Hero -->
+        <header class="py-5 text-center hero">
+            <div class="container">
+                <h1 class="display-4 fw-bold">Everything about the CS50 Duck</h1>
+                <p class="lead">A tiny website built for Harvard CS50x Problem Set 8 —
+                    four pages, Bootstrap 5, a custom stylesheet, and interactive JavaScript.</p>
+                <a href="quiz.html" class="btn btn-warning btn-lg mt-2">Take the Duck Quiz</a>
+            </div>
+        </header>
+
+        <main class="container my-5">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">Rubber Duck Debugging</h5>
+                            <p class="card-text">Explaining your code line-by-line to a duck
+                                forces you to reason it through — and often reveals the bug.</p>
+                            <a href="facts.html" class="btn btn-outline-secondary btn-sm">Learn more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">Test Your Knowledge</h5>
+                            <p class="card-text">A short interactive quiz, graded entirely in
+                                the browser with JavaScript — no page reloads.</p>
+                            <a href="quiz.html" class="btn btn-outline-secondary btn-sm">Start quiz</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">Live Clock</h5>
+                            <p class="card-text">The footer clock below updates every second,
+                                driven by <code>setInterval</code> in <code>main.js</code>.</p>
+                            <a href="about.html" class="btn btn-outline-secondary btn-sm">About this site</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="text-center py-4 border-top">
+            <div class="container">
+                <p class="mb-1">Built for <strong>CS50x</strong> Problem Set 8 · Homepage.</p>
+                <p class="text-muted small mb-0">Local time: <span id="clock">—</span></p>
+            </div>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <script src="scripts/main.js"></script>
+    </body>
+</html>
