@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+{% block title %} · Study{% endblock %}
+{% block main %}
+<a href="/decks/{{ deck_id }}" class="btn btn-link px-0 mb-3">← Back to deck</a>
+{% if card %}
+<div class="card mx-auto" style="max-width: 32rem;" x-data>
+    <div class="card-body text-center">
+        <p class="text-muted mb-2">Box {{ card.box }}</p>
+        <h2 class="h4 my-4">{{ card.front }}</h2>
+        <div id="answer" class="d-none">
+            <hr>
+            <p class="h5 my-3">{{ card.back }}</p>
+            <form method="post" action="/cards/{{ card.id }}/grade" class="d-flex justify-content-center gap-2">
+                <button name="result" value="wrong" class="btn btn-danger">Got it wrong</button>
+                <button name="result" value="correct" class="btn btn-success">Got it right</button>
+            </form>
+        </div>
+        <button id="reveal" class="btn btn-primary" onclick="document.getElementById('answer').classList.remove('d-none'); this.classList.add('d-none');">Show answer</button>
+    </div>
+</div>
+{% else %}
+<div class="alert alert-success text-center">🎉 Nothing due right now. Great work!</div>
+{% endif %}
+{% endblock %}

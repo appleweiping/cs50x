@@ -1,0 +1,13 @@
+# CS50x Final Project — FlashLearn (spaced-repetition flashcards)
+
+## Automated end-to-end tests (test_app.py) — 20 passed, 0 failed
+- auth: anonymous gate, register (dup/mismatch rejected), login
+- deck CRUD: create (empty rejected), view, delete (cards cascade)
+- card CRUD: create (empty rejected), delete; new cards box 1, due today
+- Leitner scheduling: correct promotes box 1->2->3->4 with +1 day due;
+  wrong resets to box 1 due today
+- ownership isolation: user B gets 404 on user A's deck & card
+
+## Live server smoke test (real Flask run, port 5077)
+GET /login -> 200 ; GET /register -> 200
+register -> create deck 'Capitals' -> deck visible on index (302 then 200)

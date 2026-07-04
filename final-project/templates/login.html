@@ -1,0 +1,10 @@
+{% extends "layout.html" %}
+{% block title %} · Log in{% endblock %}
+{% block main %}
+<h1 class="h3 mb-4">Log in</h1>
+<form method="post" action="/login" class="col-md-5">
+    <div class="mb-3"><input class="form-control" name="username" placeholder="Username" autofocus></div>
+    <div class="mb-3"><input class="form-control" name="password" type="password" placeholder="Password"></div>
+    <button class="btn btn-primary">Log in</button>
+</form>
+{% endblock %}

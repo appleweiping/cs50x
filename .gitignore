@@ -50,3 +50,8 @@ pset5/speller/texts/lalaland.txt
 
 # pset7 large DB (download via pset7/movies/download.sh); songs.db & fiftyville.db kept (small)
 pset7/movies/movies.db
+
+# final-project runtime data
+final-project/flashlearn.db
+final-project/*.db
+final-project/flask_session/

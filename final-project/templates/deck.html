@@ -1,0 +1,41 @@
+{% extends "layout.html" %}
+{% block title %} · {{ deck.name }}{% endblock %}
+{% block main %}
+<div class="d-flex justify-content-between align-items-center mb-3">
+    <h1 class="h3 mb-0">{{ deck.name }}</h1>
+    <div>
+        <a href="/decks/{{ deck.id }}/review" class="btn btn-primary btn-sm">Study</a>
+        <form method="post" action="/decks/{{ deck.id }}/delete" class="d-inline"
+              onsubmit="return confirm('Delete this deck?');">
+            <button class="btn btn-outline-danger btn-sm">Delete deck</button>
+        </form>
+    </div>
+</div>
+
+<form method="post" action="/decks/{{ deck.id }}/cards/create" class="row g-2 mb-4">
+    <div class="col-md-4"><input class="form-control" name="front" placeholder="Front (question)"></div>
+    <div class="col-md-4"><input class="form-control" name="back" placeholder="Back (answer)"></div>
+    <div class="col-auto"><button class="btn btn-success">Add card</button></div>
+</form>
+
+<table class="table table-striped">
+    <thead><tr><th>Front</th><th>Back</th><th>Box</th><th>Due</th><th></th></tr></thead>
+    <tbody>
+    {% for card in cards %}
+        <tr>
+            <td>{{ card.front }}</td>
+            <td>{{ card.back }}</td>
+            <td>{{ card.box }}</td>
+            <td>{{ card.due_date }}</td>
+            <td>
+                <form method="post" action="/cards/{{ card.id }}/delete" class="d-inline">
+                    <button class="btn btn-sm btn-outline-danger">✕</button>
+                </form>
+            </td>
+        </tr>
+    {% else %}
+        <tr><td colspan="5" class="text-muted">No cards yet.</td></tr>
+    {% endfor %}
+    </tbody>
+</table>
+{% endblock %}

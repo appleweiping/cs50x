@@ -1,0 +1,33 @@
+{% extends "layout.html" %}
+{% block title %} · Decks{% endblock %}
+{% block main %}
+<div class="d-flex justify-content-between align-items-center mb-4">
+    <h1 class="h3 mb-0">Your decks</h1>
+</div>
+
+<form method="post" action="/decks/create" class="row g-2 mb-4 col-md-6">
+    <div class="col"><input class="form-control" name="name" placeholder="New deck name"></div>
+    <div class="col-auto"><button class="btn btn-success">Add deck</button></div>
+</form>
+
+{% if decks %}
+<div class="row g-3">
+    {% for deck in decks %}
+    <div class="col-md-4">
+        <div class="card h-100">
+            <div class="card-body">
+                <h5 class="card-title">{{ deck.name }}</h5>
+                <p class="card-text text-muted">
+                    {{ deck.total or 0 }} card(s) · <strong>{{ deck.due or 0 }}</strong> due
+                </p>
+                <a href="/decks/{{ deck.id }}" class="btn btn-sm btn-outline-primary">Open</a>
+                <a href="/decks/{{ deck.id }}/review" class="btn btn-sm btn-primary">Study</a>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% else %}
+<p class="text-muted">No decks yet — create one above.</p>
+{% endif %}
+{% endblock %}
