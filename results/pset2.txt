@@ -1,0 +1,26 @@
+# CS50x pset2 verification runs
+
+## scrabble
+Question/Question -> Player 1: Player 2: Tie!
+Hello/World (Tie) -> Player 1: Player 2: Player 2 wins!
+COMPUTER/science -> Player 1: Player 2: Player 1 wins!
+hello/goodbye? -> Player 1: Player 2: Player 2 wins!
+
+## readability
+'One fish. Two fish.' -> Text: Before Grade 1
+'Congratulations! ...' (Grade 3) -> Text: Grade 3
+'Harry Potter...' (Grade 5) -> Text: Grade 5
+
+## caesar
+key=1 'HELLO' -> plaintext:  ciphertext: IFMMP
+key=13 'Hello, World' -> plaintext:  ciphertext: Uryyb, Jbeyq
+usage (no arg) -> Usage: ./caesar key
+exit=1
+usage (non-numeric) -> Usage: ./caesar key
+exit=1
+
+## substitution
+key=YTNSHKVEFXRBAUQZCLWDMIPGJO 'HELLO' -> plaintext:  ciphertext: EHBBQ
+key(same) 'Hello, World!' -> plaintext:  ciphertext: Ehbbq, Pqlbs!
+bad key len -> Key must contain 26 characters.
+exit=1

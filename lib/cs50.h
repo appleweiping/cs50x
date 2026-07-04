@@ -12,6 +12,7 @@
 
 #include <float.h>
 #include <limits.h>
+#include <stdbool.h> // CS50's header exposes `bool`/`true`/`false` to pset code
 
 /**
  * Our own data type for string variables (a synonym for `char *`), matching CS50's.
