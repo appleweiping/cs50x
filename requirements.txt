@@ -1,0 +1,8 @@
+# Python dependencies used across CS50x psets (install into the shared csdiy venv).
+# pset9 (finance) and the final project (FlashLearn):
+Flask>=3.0
+Flask-Session>=0.8
+requests>=2.31
+# Only used to VERIFY pset4 image/audio outputs (not needed to run the psets):
+numpy>=1.26
+Pillow>=10.0
